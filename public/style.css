@@ -37,16 +37,47 @@
     padding: 60px 30px 30px 30px;
     width: fit-content;
     height: 400px;
-    margin: 3.5% 0 0 5%;
+    margin: 13% 0 0 15%;
     box-shadow: 0 2px 5px #ccc;
-    /* position: absolute;
-    top: 24%;
-    left: 5%; */
   }
 
-  /* .form-container button {
 
+  /* Card Section */
 
-  } */
+  .contacts-container {
+      padding-top: 2%;
+      padding-right: 2%;
+  }
+
+  .card {
+      background-color: #A0BCC2;
+      border-radius: 10px;
+  }
+
+  .card img {
+    border-radius: 10px;
+    background-color: #A0BCC2;
+    margin: 5px;
+  }
+
+  .card h5 {
+    margin-left: 6%;
+  }
+
+  .card p {
+      margin-bottom: 0;
+      margin-left: 6%;
+  }
+
+  .info-container {
+      padding-top: 13px;
+  }
+
+  .info-container button {
+    position: absolute;
+    right: 6px;
+    bottom:6px;
+  }
+
 
 
