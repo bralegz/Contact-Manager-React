@@ -7,7 +7,8 @@ import {
     faEarthAmericas
 } from '@fortawesome/free-solid-svg-icons';
 
-function Contact() {
+
+function Contact(props) {
 
     return(
             <div className='col-4'>
@@ -18,11 +19,11 @@ function Contact() {
                         </div>
                         <div className='col-8'>
                             <div className='info-container'>
-                                <h5 className="card-title">Bryan Alegria</h5>
-                                <p className="card-text"><FontAwesomeIcon icon={faEnvelope} /> bryan@gmail.com</p>
-                                <p className="card-text"><FontAwesomeIcon icon={faPhone} /> +51979267444</p>
-                                <p className="card-text"><FontAwesomeIcon icon={faEarthAmericas} /> Peru</p>
-                                <button><FontAwesomeIcon icon={faTrash} /></button>
+                                <h5 className="card-title">{props.renderName}</h5>
+                                <p className="card-text"><FontAwesomeIcon icon={faEnvelope} /> {props.renderEmail}</p>
+                                <p className="card-text"><FontAwesomeIcon icon={faPhone} /> {props.renderPhone}</p>
+                                <p className="card-text"><FontAwesomeIcon icon={faEarthAmericas} /> {props.renderCountry}</p>
+                                <button onClick={() => props.deleteHandler(props.id)}><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                     </div>
