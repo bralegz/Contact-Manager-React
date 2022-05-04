@@ -41,7 +41,7 @@ function clickHandler() {
 }
 
 function deleteHandler(id) {
-  setAllContacts( () => allContacts.filter((contact, index) => id != index) );
+  setAllContacts( () => allContacts.filter((contact, index) => id !== index) );
 }
 
 
