@@ -33,11 +33,11 @@
 
   .form-container {
     background-color: #A0BCC2;
-    border-radius: 25px;
+    border-radius: 25px;  
     padding: 60px 30px 30px 30px;
-    width: fit-content;
+    width: 300px;
     height: 400px;
-    margin: 13% 0 0 15%;
+    margin: 13% auto 0 auto;
     box-shadow: 0 2px 5px #ccc;
   }
 
@@ -45,19 +45,37 @@
   /* Card Section */
 
   .contacts-container {
-      padding-top: 2%;
-      padding-right: 2%;
+      display: flex;
+      overflow: auto;
+      height: auto;
+      max-height: 450px;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      padding-right: 10px;
+      justify-content: space-between;
+
   }
 
-  .card {
+  .card-wrapper {
+      display: grid;
+      margin: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, auto);
       background-color: #A0BCC2;
       border-radius: 10px;
+      height: auto;
+      max-height: 200px;
   }
 
-  .card img {
+  .picture-column {
+    display: flex;
+    padding: 10px;
+  }
+
+  .picture-column img {
     border-radius: 10px;
-    background-color: #A0BCC2;
-    margin: 5px;
+    height: auto;
+    max-width: 150px;
   }
 
   .card h5 {
@@ -69,15 +87,30 @@
       margin-left: 6%;
   }
 
-  .info-container {
-      padding-top: 13px;
+  .info-column {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
   }
 
-  .info-container button {
-    position: absolute;
-    right: 6px;
-    bottom:6px;
+  @media screen and (max-width: 990px) {
+
+    /* .responsive-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: #A0BCC2;
+      border-radius: 25px;  
+      padding: 60px 30px 30px 30px;
+      width: 500px;
+      height: 400px;
+      margin: 13% 0 0 0;
+      box-shadow: 0 2px 5px #ccc;
+    } */
+
   }
-
-
 

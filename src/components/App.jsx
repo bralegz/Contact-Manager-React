@@ -48,7 +48,7 @@ function deleteHandler(id) {
   return (
     <div>
       <Header />
-      <div className='row'>
+      <div className='row responsive-container'>
         <div className='col-3'>
           <Form 
           clickHandler={clickHandler} 
@@ -60,7 +60,16 @@ function deleteHandler(id) {
           />
         </div>
         <div className='col-9 contacts-container'>
-          <div className='row'>
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
             {allContacts.map((contact, index) => {
               return(
                 <Contact 
@@ -74,7 +83,6 @@ function deleteHandler(id) {
                 />
               );
             })}
-          </div>
         </div>
       </div>
       <Footer />
