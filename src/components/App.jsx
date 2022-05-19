@@ -46,10 +46,8 @@ function deleteHandler(id) {
 
 
   return (
-    <div>
+    <div className='wrapper'>
       <Header />
-      <div className='row responsive-container'>
-        <div className='col-3'>
           <Form 
           clickHandler={clickHandler} 
           inputHandler={inputHandler}
@@ -58,8 +56,7 @@ function deleteHandler(id) {
           contactPhone={contact.phone}
           contactCountry={contact.country}  
           />
-        </div>
-        <div className='col-9 contacts-container'>
+        <div className='contacts-container'>
             <Contact />
             <Contact />
             <Contact />
@@ -84,7 +81,6 @@ function deleteHandler(id) {
               );
             })}
         </div>
-      </div>
       <Footer />
     </div>
   );
