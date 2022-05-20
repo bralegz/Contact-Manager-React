@@ -47,7 +47,7 @@ function deleteHandler(id) {
 
   return (
     <div className='wrapper'>
-      <Header />
+      {/* <Header /> */}
           <Form 
           clickHandler={clickHandler} 
           inputHandler={inputHandler}
@@ -81,7 +81,7 @@ function deleteHandler(id) {
               );
             })}
         </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
