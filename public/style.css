@@ -63,10 +63,9 @@
 
   .contacts-container {
       grid-area: contacts;
-      align-self: center;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       overflow: auto;
       height: auto;
       max-height: 450px;
@@ -113,8 +112,16 @@
       padding: 10px;
   }
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 670px) {
 
+    .wrapper {
+      grid-template-areas: 
+      "form"
+      "contacts"
+      ;
+      grid-template-columns: 2fr;
+      grid-template-rows: auto minmax(500px, 1fr);
+    }
 
   }
 
