@@ -1,6 +1,4 @@
 import React, {useState}  from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Form from './Form';
 import Contact from './Contact';  
 
@@ -47,7 +45,6 @@ function deleteHandler(id) {
 
   return (
     <div className='wrapper'>
-      {/* <Header /> */}
           <Form 
           clickHandler={clickHandler} 
           inputHandler={inputHandler}
@@ -57,6 +54,7 @@ function deleteHandler(id) {
           contactCountry={contact.country}  
           />
         <div className='contacts-container'>
+            {/* <Contact />
             <Contact />
             <Contact />
             <Contact />
@@ -65,8 +63,7 @@ function deleteHandler(id) {
             <Contact />
             <Contact />
             <Contact />
-            <Contact />
-            <Contact />
+            <Contact /> */}
             {allContacts.map((contact, index) => {
               return(
                 <Contact 
@@ -81,7 +78,6 @@ function deleteHandler(id) {
               );
             })}
         </div>
-      {/* <Footer /> */}
     </div>
   );
 }
