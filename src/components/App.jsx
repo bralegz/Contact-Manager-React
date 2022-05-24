@@ -54,16 +54,6 @@ function deleteHandler(id) {
           contactCountry={contact.country}  
           />
         <div className='contacts-container'>
-            {/* <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact /> */}
             {allContacts.map((contact, index) => {
               return(
                 <Contact 
